@@ -1,1 +1,1 @@
-gcc -Wall -Wextra -Wpedantic -std=c11 -g number_analyzer.c -o number_analyzer
+gcc -Wall -Wextra -Wpedantic -std=c11 -g name_tool.c -o name_tool

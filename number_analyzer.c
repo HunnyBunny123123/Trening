@@ -1,15 +1,17 @@
 #include <stdio.h>
 int main() { 
   int count;
-  int avg;
+  double avg;
   int sum = 0;
   int min;
   int max;
   int numbers;
   int myNumbers[100];
-
+  int evenCount = 0;
+  int negativeCount = 0;
+  int result = 0;
   printf("How many numbers? ");
-  scanf("%d", &numbers);
+   result = scanf("%d", &numbers);
 
   if (numbers <= 0 || numbers > 100) {
       printf("Invalid count\n");
@@ -25,7 +27,7 @@ int main() {
     sum = sum + myNumbers[count];
     
   }
-  avg = sum / numbers;
+  avg = (double) sum / numbers;
   min = myNumbers[0];
   max = myNumbers[0];
   for(count = 0; count < numbers; count = count +1){
@@ -35,10 +37,20 @@ int main() {
    if(min > myNumbers[count]){
     min = myNumbers[count];
    }
+     if (myNumbers[count] % 2 == 0) {
+      evenCount = evenCount + 1;
   }
+
+  if (myNumbers[count] < 0) {
+      negativeCount = negativeCount + 1;
+  }
+  }
+
   printf("Sum: %d\n", sum);
-  printf("Average: %d\n", avg);
+  printf("Average: %.2f\n", avg);
   printf("Min: %d\n", min);
   printf("Max: %d\n", max);
+  printf("Even numbers: %d\n", evenCount);
+  printf("Negative numbers: %d\n", negativeCount);
   return 0;
 }
