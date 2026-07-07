@@ -1,1 +1,1 @@
-gcc -Wall -Wextra -Wpedantic -std=c11 -g name_tool.c -o name_tool
+gcc -Wall -Wextra -Wpedantic -std=c11 -g guessing_game.c -o guessing_games

@@ -9,9 +9,9 @@ int main() {
   int myNumbers[100];
   int evenCount = 0;
   int negativeCount = 0;
-  int result = 0;
+
   printf("How many numbers? ");
-   result = scanf("%d", &numbers);
+  scanf("%d", &numbers);
 
   if (numbers <= 0 || numbers > 100) {
       printf("Invalid count\n");
@@ -50,7 +50,7 @@ int main() {
   printf("Average: %.2f\n", avg);
   printf("Min: %d\n", min);
   printf("Max: %d\n", max);
-  printf("Even numbers: %d\n", evenCount);
+    printf("Even numbers: %d\n", evenCount< );
   printf("Negative numbers: %d\n", negativeCount);
   return 0;
 }
