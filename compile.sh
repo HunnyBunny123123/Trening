@@ -1,1 +1,1 @@
-gcc -Wall -Wextra -Wpedantic -std=c11 -g name_formatter.c -o name_formatter
+gcc -Wall -Wextra -Wpedantic -std=c11 -g array_pointers.c -o array_pointers
