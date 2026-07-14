@@ -1,1 +1,1 @@
-gcc -Wall -Wextra -Wpedantic -std=c11 -g array_pointers.c -o array_pointers
+gcc -Wall -Wextra -Wpedantic -std=c11 -g file_intro.c -o file_intro
