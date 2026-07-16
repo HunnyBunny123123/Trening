@@ -1,1 +1,1 @@
-gcc -Wall -Wextra -Wpedantic -std=c11 -g file_intro.c -o file_intro
+gcc -Wall -Wextra -Wpedantic -std=c11 -g grade_report.c -o grade_report
